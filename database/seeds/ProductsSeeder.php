@@ -11,7 +11,7 @@ class ProductsSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('products')->insert(
+        DB::table('products')->insert([
             [
                 'id_category' => 1,
                 'name'        => 'Guiso de Pechuga de Pavita',
@@ -42,7 +42,7 @@ class ProductsSeeder extends Seeder
             ],
             [
                 'id_category' => 2,
-                'name'        => 'Queso Fresco BONLÉ',
+                'name'        => 'Queso Edam BONLÉ',
                 'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
                 'price'       => 60.00,
                 'quantity'    => 3
@@ -76,7 +76,7 @@ class ProductsSeeder extends Seeder
                 'price'       => 99.00,
                 'quantity'    => 10
             ]
-        );
+        ]);
         
     }
 }
