@@ -8,6 +8,6 @@ use App\Products;
 class ProductsController extends Controller
 {
     public function index(){
-        return Products::all();
+        return Products::getAllProducts();
     }
 }
