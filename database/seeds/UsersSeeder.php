@@ -19,5 +19,6 @@ class UsersSeeder extends Seeder
             'direction' => 'Av Alameda Sur Calle Cabo Blanco MZ H6 LT22',
             'zip_code' => '15067'
         ]);
+        Artisan::call('passport:install');
     }
 }
